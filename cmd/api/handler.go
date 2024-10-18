@@ -22,7 +22,7 @@ func AuthHandler(w http.ResponseWriter, r *http.Request) {
 // helloHandler returns a greeting
 func helloHandler(w http.ResponseWriter, r *http.Request) {
 	// simulate a panic
-	if r.Method != http.MethodPost {
+	if r.Method != http.MethodGet {
 		panic(fmt.Sprintf("Invalid HTTP method %s. Only GET requests are allowed.", r.Method))
 	}
 
